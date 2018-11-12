@@ -10,7 +10,7 @@ function generateCustomers() {
   books = [
     {
       id: 12,
-      sku: 12064273040195392,
+      sku: 1,
       title: "Cat Tee Black T-Shirt",
       description: "4 MSL",
       availableSizes: ["Science fiction", "Drama"],
@@ -24,7 +24,7 @@ function generateCustomers() {
 
     {
       id: 13,
-      sku: 51498472915966366,
+      sku: 2,
       title: "Dark Thug Blue-Navy T-Shirt",
       description: "",
       availableSizes: ["Romance"],
@@ -38,7 +38,7 @@ function generateCustomers() {
 
     {
       id: 14,
-      sku: 10686354557628303,
+      sku: 3,
       title: "Sphynx Tie Dye Wine T-Shirt",
       description: "GPX Poly 1",
       availableSizes: ["Fantasy", "Travel", "History"],
@@ -52,7 +52,7 @@ function generateCustomers() {
 
     {
       id: 15,
-      sku: 11033926921508487,
+      sku: 4,
       title: "Skuul",
       description: "Treino 2014",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
@@ -66,7 +66,7 @@ function generateCustomers() {
 
     {
       id: 11,
-      sku: 39876704341265606,
+      sku: 5,
       title: "Wine Skul T-Shirt",
       description: "",
       availableSizes: ["Fantasy", "Travel"],
@@ -80,7 +80,7 @@ function generateCustomers() {
 
     {
       id: 16,
-      sku: 10412368723880253,
+      sku: 6,
       title: "Short Sleeve T-Shirt",
       description: "",
       availableSizes: ["Drama", "Fantasy", "Travel", "Horror", "History"],
@@ -94,7 +94,7 @@ function generateCustomers() {
 
     {
       id: 0,
-      sku: 8552515751438644,
+      sku: 7,
       title: "Cat Tee Black T-Shirt",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
@@ -108,7 +108,7 @@ function generateCustomers() {
 
     {
       id: 1,
-      sku: 18644119330491312,
+      sku: 8,
       title: "Sphynx Tie Dye Grey T-Shirt",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
@@ -122,7 +122,7 @@ function generateCustomers() {
 
     {
       id: 2,
-      sku: 11854078013954528,
+      sku: 9,
       title: "Danger Knife Grey",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel"],
@@ -136,7 +136,7 @@ function generateCustomers() {
 
     {
       id: 3,
-      sku: 876661122392077,
+      sku: 10,
       title: "White DGK Script Tee",
       description: "2014 s/nº",
       availableSizes: ["Fantasy", "Travel"],
@@ -150,7 +150,7 @@ function generateCustomers() {
 
     {
       id: 4,
-      sku: 9197907543445677,
+      sku: 11,
       title: "Born On The Streets",
       description: "14/15 s/nº - Jogador",
       availableSizes: ["History"],
@@ -164,7 +164,7 @@ function generateCustomers() {
 
     {
       id: 5,
-      sku: 10547961582846888,
+      sku: 12,
       title: "Tso 3D Short Sleeve T-Shirt A",
       description: "14/15 + Camiseta 1º Mundial",
       availableSizes: ["Fantasy", "Travel", "History"],
@@ -178,7 +178,7 @@ function generateCustomers() {
 
     {
       id: 6,
-      sku: 6090484789343891,
+      sku: 13,
       title: "Man Tie Dye Cinza Grey T-Shirt",
       description: "Goleiro 13/14",
       availableSizes: ["History", "Series"],
@@ -192,7 +192,7 @@ function generateCustomers() {
 
     {
       id: 7,
-      sku: 18532669286405342,
+      sku: 14,
       title: "Crazy Monkey Black T-Shirt",
       description: "1977 Infantil",
       availableSizes: ["Science fiction"],
@@ -206,7 +206,7 @@ function generateCustomers() {
 
     {
       id: 8,
-      sku: 5619496040738316,
+      sku: 15,
       title: "Tso 3D Black T-Shirt",
       description: "",
       availableSizes: ["History"],
@@ -220,7 +220,7 @@ function generateCustomers() {
 
     {
       id: 9,
-      sku: 11600983276356165,
+      sku: 16,
       title: "Crazy Monkey Grey",
       description: "",
       availableSizes: ["Travel", "History"],
@@ -234,7 +234,7 @@ function generateCustomers() {
 
     {
       id: 10,
-      sku: 27250082398145995,
+      sku: 17,
       title: "On The Streets Black T-Shirt",
       description: "",
       availableSizes: ["Travel", "History"],

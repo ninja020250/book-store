@@ -138,6 +138,8 @@ footer {
       border: 1px solid #eee; }
       .shelf-container .shelf-item:hover .shelf-item__buy-btn {
         background-color: #eabf00; }
+    .shelf-container .shelf-item .shelf-item__buy-btn {
+      background-color: #189eff; }
     .shelf-container .shelf-item .shelf-stopper {
       position: absolute;
       color: #ececec;

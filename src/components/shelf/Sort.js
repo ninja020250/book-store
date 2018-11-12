@@ -21,8 +21,8 @@ class Sort extends Component {
 
   render() {
     return (
-      <div className="sort">
-        Order by <Selectbox options={sortBy} handleOnChange={this.handleSort} />
+      <div className="sort ">
+        Order by <Selectbox options={sortBy} handleOnChange={this.handleSort}/>
       </div>
     );
   }

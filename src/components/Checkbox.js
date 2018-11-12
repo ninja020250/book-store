@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 
 class Checkbox extends Component {
-  
+
   state = {
     isChecked: false,
   }
@@ -25,18 +25,17 @@ class Checkbox extends Component {
     const { isChecked } = this.state;
 
     return (
-      <div className={classes}>
-        <label>
-          <input
-            type="checkbox"
-            value={label}
-            checked={isChecked}
-            onChange={this.toggleCheckboxChange}
-          />
-
-          <span className="checkmark">{label}</span>
-        </label>
+      <div >
+        <li class="list-group-item">
+          <label>
+            <input type="checkbox"
+              value={label}
+              checked={isChecked}
+              onChange={this.toggleCheckboxChange} /> {label}
+          </label>
+        </li>
       </div>
+
     );
   }
 }

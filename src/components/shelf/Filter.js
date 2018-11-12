@@ -7,7 +7,7 @@ import { updateFilters } from "../../store/actions/filterActions";
 
 import Checkbox from "../Checkbox";
 
-const availableSizes = [
+const availableTypes = [
   "Drama",
   "Science fiction",
   "Romance",
@@ -42,13 +42,15 @@ class Filter extends Component {
     />
   );
 
-  createCheckboxes = () => availableSizes.map(this.createCheckbox);
+  createCheckboxes = () => availableTypes.map(this.createCheckbox);
 
   render() {
     return (
       <div className="filters">
-        <h4 className="title">Sizes:</h4>
+        <h4 className="title">TYPES:</h4>
+        <ul class="list-group list-group-flush">
         {this.createCheckboxes()}
+        </ul>
       </div>
     );
   }

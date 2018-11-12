@@ -2,6 +2,7 @@
 
 $yellow: #eabf00;
 $black-light: #1b1a20;
+$blueTiki: #189eff;
 
 body {
   margin: 0;
@@ -182,7 +183,6 @@ footer {
     padding: 10px;
     margin-bottom: 30px;
     border: 1px solid transparent;
-
     &:hover {
       border: 1px solid #eee;
 
@@ -190,6 +190,9 @@ footer {
         background-color: $yellow;
       }
     }
+    .shelf-item__buy-btn{
+      background-color: $blueTiki;
+    } 
 
     .shelf-stopper {
       position: absolute;

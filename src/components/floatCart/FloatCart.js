@@ -81,7 +81,7 @@ class FloatCart extends Component {
     if (!productQuantity) {
       alert("Add some product in the bag!");
     }else {
-      alert(`Checkout - Subtotal: ${currencyFormat} ${util.formatPrice(totalPrice, currencyId)}`);
+      alert(`Checkout - TOTAL: ${currencyFormat} ${util.formatPrice(totalPrice, currencyId)}`);
     }
   }
 
@@ -146,7 +146,7 @@ class FloatCart extends Component {
           </div>
 
           <div className="float-cart__footer">
-            <div className="sub">SUBTOTAL</div>
+            <div className="sub">TOTAL</div>
             <div className="sub-price">
               <p className="sub-price__val">
                 {`${cartTotals.currencyFormat} ${util.formatPrice(cartTotals.totalPrice, cartTotals.currencyId)}`}
