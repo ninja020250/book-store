@@ -7,7 +7,16 @@ import { updateFilters } from "../../store/actions/filterActions";
 
 import Checkbox from "../Checkbox";
 
-const availableSizes = ["XS", "S", "M", "ML", "L", "XL", "XXL"];
+const availableSizes = [
+  "Drama",
+  "Science fiction",
+  "Romance",
+  "Horror",
+  "Travel",
+  "History",
+  "Series",
+  "Fantasy"
+];
 
 class Filter extends Component {
   componentWillMount() {
