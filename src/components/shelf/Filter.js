@@ -29,7 +29,6 @@ class Filter extends Component {
     } else {
       this.selectedCheckboxes.add(label);
     }
-
     this.props.updateFilters(Array.from(this.selectedCheckboxes));
   };
 
@@ -48,8 +47,8 @@ class Filter extends Component {
     return (
       <div className="filters">
         <h4 className="title">TYPES:</h4>
-        <ul class="list-group list-group-flush">
-        {this.createCheckboxes()}
+        <ul className="list-group list-group-flush">
+          {this.createCheckboxes()}
         </ul>
       </div>
     );

@@ -1,9 +1,6 @@
 import { FETCH_PRODUCTS } from "./types";
 import axios from "axios";
 
-// const productsAPI =
-//   "https://react-shopping-cart-67954.firebaseio.com/products.json";
-
 const productsAPI = "http://localhost:4200/products";
 
 const compare = {
@@ -19,12 +16,43 @@ const compare = {
   }
 };
 
-export const fetchProducts = (filters, sortBy, callback) => dispatch => {
+export const searchProducts = searchText => dispatch => {
+  var a = 0;
   axios
     .get(productsAPI)
     .then(res => {
       let { products } = res.data;
+      var ProductFiltered = [];
+      if (products.length > 0) {
+        for (var product of products) {
+          if (product.title.toUpperCase().includes(searchText.toUpperCase())) {
+            ProductFiltered.push(product);
+          }
+        }
+      }
 
+      return dispatch({
+        type: FETCH_PRODUCTS,
+        payload: { products: ProductFiltered, totalActual: products.length }
+      });
+    })
+    .catch(err => {
+      console.log("Could not fetch products. Try again later." + err);
+      //throw new Error();
+    });
+};
+
+export const fetchProducts = (
+  filters,
+  sortBy,
+  pagination,
+  callback
+) => dispatch => {
+  axios
+    .get(productsAPI)
+    .then(res => {
+      let { products } = res.data;
+      let total = products.length;
       if (!!filters && filters.length > 0) {
         products = products.filter(p =>
           filters.find(f => p.availableSizes.find(size => size === f))
@@ -35,17 +63,24 @@ export const fetchProducts = (filters, sortBy, callback) => dispatch => {
         products = products.sort(compare[sortBy]);
       }
 
+      if (!!pagination) {
+        const { currentPage, perPage } = pagination;
+        const indexOfLastTodo = currentPage * perPage;
+        const indexOfFirstTodo = indexOfLastTodo - perPage;
+        products = products.slice(indexOfFirstTodo, indexOfLastTodo);
+      }
+
       if (!!callback) {
         callback();
       }
 
       return dispatch({
         type: FETCH_PRODUCTS,
-        payload: products
+        payload: { products: products, totalActual: total }
       });
     })
     .catch(err => {
-      console.log(err);
-      throw new Error("Could not fetch products. Try again later.");
+      console.log("Could not fetch products. Try again later." + err);
+      //throw new Error();
     });
 };

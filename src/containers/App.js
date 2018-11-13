@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 import { Provider } from "react-redux";
-import Pagination from '../components/pagination/Pagination';
+import Pagination from "../components/pagination/Pagination";
 import Shelf from "../components/shelf/Shelf";
 import Footer from "../components/Footer";
 import FloatCart from "./../components/floatCart/FloatCart";
@@ -16,12 +16,11 @@ class App extends Component {
       <Provider store={store}>
         <div className="App">
           <Navigation />
-          {/* <Slider/> */}
+          <Slider />
           <main>
             <Shelf />
-            <Pagination />
           </main>
-          
+
           <Footer />
           <FloatCart />
         </div>

@@ -1,32 +1,36 @@
 @import "./variables.scss";
+
+//static class
+.title {
+  color: $blueTiki;
+}
+//narbar class
 .navbar {
-  background-color: $blueTiki; 
-  a{
+  background-color: $blueTiki;
+  a {
     color: white !important;
   }
 }
 .navbar-collapse ul li {
- 
-  a{
+  a {
     color: white !important;
   }
- 
 }
 .search-form {
   padding: 2rem 1rem;
 }
 //checkbox custom
-input[type="checkbox"]{
+input[type="checkbox"] {
   position: relative;
   top: 5px;
   width: 20px;
   height: 20px;
   -webkit-appearance: none;
   outline: none;
-  transition: .5s;
- 
+  transition: 0.5s;
+
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -34,23 +38,21 @@ input[type="checkbox"]{
     height: 100%;
     border: 4px solid #262626;
     box-sizing: border-box;
-    transition: .5s;
+    transition: 0.5s;
     margin-left: -10px;
   }
 }
-input:checked[type="checkbox"]{
-  &:before{
+input:checked[type="checkbox"] {
+  &:before {
     border-left: none;
     border-top: none;
     width: 10px;
-    border-color:#0f0;
+    border-color: #0f0;
     transform: rotate(45deg) translate(5px, -10px);
     margin-left: -10px;
   }
 }
-label{
+label {
   font-size: 15px;
   font-family: sans-serif;
 }
-
-

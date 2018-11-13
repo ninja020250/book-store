@@ -1,14 +1,30 @@
 import React, { Component } from "react";
+import { searchProducts } from "../../store/actions/productActions";
 
+import { connect } from "react-redux";
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchText: ""
+    };
+  }
+  handleInput = event => {
+    console.log(event.target.value);
+    this.setState({ searchText: event.target.value });
+  };
+  handleSubmit = () => {
+    console.log(this.state.searchText);
+    this.props.searchProducts(this.state.searchText);
+  };
   render() {
     return (
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-lg navbar-light ">
+        <a className="navbar-brand" href="#">
           BOOK STORE
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -16,32 +32,41 @@ class Navigation extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav mr-auto">
+            <li className="nav-item active">
+              <a className="nav-link" href="#">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
+          <div className="form-inline my-2 my-lg-0">
             <input
-              class="form-control mr-sm-2"
+              className="form-control mr-sm-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
+              name="searchBox"
+              onChange={this.handleInput}
             />
-            <button class="btn btn-warning my-2 my-sm-0" type="submit">
+            <button
+              className="btn btn-warning my-2 my-sm-0"
+              onClick={this.handleSubmit}
+            >
               Search
             </button>
-          </form>
+          </div>
         </div>
       </nav>
     );
   }
 }
+const mapStateToProps = state => ({});
 
-export default Navigation;
+export default connect(
+  mapStateToProps,
+  { searchProducts }
+)(Navigation);

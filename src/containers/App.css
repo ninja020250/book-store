@@ -215,13 +215,14 @@ footer {
     background-size: contain;
     background-position: center; }
     .float-cart .bag--float-cart-closed {
+      border-radius: 10px;
       position: absolute;
-      background-color: #000;
+      background-color: #189eff;
       background-size: 50%;
       left: -60px;
       width: 60px;
       height: 60px;
-      top: 50%;
+      top: 10%;
       cursor: pointer; }
       .float-cart .bag--float-cart-closed .bag__quantity {
         bottom: 5px;

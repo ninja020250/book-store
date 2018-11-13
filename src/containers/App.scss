@@ -190,9 +190,9 @@ footer {
         background-color: $yellow;
       }
     }
-    .shelf-item__buy-btn{
+    .shelf-item__buy-btn {
       background-color: $blueTiki;
-    } 
+    }
 
     .shelf-stopper {
       position: absolute;
@@ -264,7 +264,6 @@ footer {
   height: 100%;
   background-color: $black-light;
   box-sizing: border-box;
-
   transition: right 0.2s;
 
   &--open {
@@ -301,13 +300,14 @@ footer {
     background-position: center;
 
     &--float-cart-closed {
+      border-radius: 10px;
       position: absolute;
-      background-color: #000;
+      background-color: $blueTiki;
       background-size: 50%;
       left: -60px;
       width: 60px;
       height: 60px;
-      top: 50%;
+      top: 10%;
       cursor: pointer;
       .bag__quantity {
         bottom: 5px;

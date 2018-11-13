@@ -1,3 +1,6 @@
+.title {
+  color: #189eff; }
+
 .navbar {
   background-color: #189eff; }
   .navbar a {
@@ -16,9 +19,9 @@ input[type="checkbox"] {
   height: 20px;
   -webkit-appearance: none;
   outline: none;
-  transition: .5s; }
+  transition: 0.5s; }
   input[type="checkbox"]:before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -26,7 +29,7 @@ input[type="checkbox"] {
     height: 100%;
     border: 4px solid #262626;
     box-sizing: border-box;
-    transition: .5s;
+    transition: 0.5s;
     margin-left: -10px; }
 
 input:checked[type="checkbox"]:before {

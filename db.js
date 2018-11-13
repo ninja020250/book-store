@@ -11,7 +11,7 @@ function generateCustomers() {
     {
       id: 12,
       sku: 1,
-      title: "Cat Tee Black T-Shirt",
+      title: "Tuoi tre dang gia bao nhieu",
       description: "4 MSL",
       availableSizes: ["Science fiction", "Drama"],
       style: "Black with custom print",
@@ -25,7 +25,7 @@ function generateCustomers() {
     {
       id: 13,
       sku: 2,
-      title: "Dark Thug Blue-Navy T-Shirt",
+      title: "That tich khong mua",
       description: "",
       availableSizes: ["Romance"],
       style: "Front print and paisley print",
@@ -39,7 +39,7 @@ function generateCustomers() {
     {
       id: 14,
       sku: 3,
-      title: "Sphynx Tie Dye Wine T-Shirt",
+      title: "yeu em tu cai nhin dau tien",
       description: "GPX Poly 1",
       availableSizes: ["Fantasy", "Travel", "History"],
       style: "Front tie dye print",
@@ -53,7 +53,7 @@ function generateCustomers() {
     {
       id: 15,
       sku: 4,
-      title: "Skuul",
+      title: "yeu em tu cai nhin dau tien",
       description: "Treino 2014",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
       style: "Black T-Shirt with front print",
@@ -67,7 +67,7 @@ function generateCustomers() {
     {
       id: 11,
       sku: 5,
-      title: "Wine Skul T-Shirt",
+      title: "Tuoi tre dang gia bao nhieu",
       description: "",
       availableSizes: ["Fantasy", "Travel"],
       style: "Wine",
@@ -81,7 +81,7 @@ function generateCustomers() {
     {
       id: 16,
       sku: 6,
-      title: "Short Sleeve T-Shirt",
+      title: "5cm/s",
       description: "",
       availableSizes: ["Drama", "Fantasy", "Travel", "Horror", "History"],
       style: "Grey",
@@ -95,7 +95,7 @@ function generateCustomers() {
     {
       id: 0,
       sku: 7,
-      title: "Cat Tee Black T-Shirt",
+      title: "5cm/s",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
       style: "Branco com listras pretas",
@@ -109,7 +109,7 @@ function generateCustomers() {
     {
       id: 1,
       sku: 8,
-      title: "Sphynx Tie Dye Grey T-Shirt",
+      title: "5cm/s",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel", "History", "Series"],
       style: "Preta com listras brancas",
@@ -123,7 +123,7 @@ function generateCustomers() {
     {
       id: 2,
       sku: 9,
-      title: "Danger Knife Grey",
+      title: "That tich khong mua",
       description: "14/15 s/nº",
       availableSizes: ["Fantasy", "Travel"],
       style: "Branco com listras pretas",
@@ -137,7 +137,7 @@ function generateCustomers() {
     {
       id: 3,
       sku: 10,
-      title: "White DGK Script Tee",
+      title: "Yeu em tu cai nhin dau tien",
       description: "2014 s/nº",
       availableSizes: ["Fantasy", "Travel"],
       style: "Preto com listras brancas",
@@ -151,7 +151,7 @@ function generateCustomers() {
     {
       id: 4,
       sku: 11,
-      title: "Born On The Streets",
+      title: "That tich khong mua",
       description: "14/15 s/nº - Jogador",
       availableSizes: ["History"],
       style: "Branco com listras pretas",
@@ -165,7 +165,7 @@ function generateCustomers() {
     {
       id: 5,
       sku: 12,
-      title: "Tso 3D Short Sleeve T-Shirt A",
+      title: "Harry Potter",
       description: "14/15 + Camiseta 1º Mundial",
       availableSizes: ["Fantasy", "Travel", "History"],
       style: "Preto",
@@ -179,7 +179,7 @@ function generateCustomers() {
     {
       id: 6,
       sku: 13,
-      title: "Man Tie Dye Cinza Grey T-Shirt",
+      title: "Harry Potter",
       description: "Goleiro 13/14",
       availableSizes: ["History", "Series"],
       style: "Branco",
@@ -193,7 +193,7 @@ function generateCustomers() {
     {
       id: 7,
       sku: 14,
-      title: "Crazy Monkey Black T-Shirt",
+      title: "Harry Potter",
       description: "1977 Infantil",
       availableSizes: ["Science fiction"],
       style: "Preto com listras brancas",
@@ -207,7 +207,7 @@ function generateCustomers() {
     {
       id: 8,
       sku: 15,
-      title: "Tso 3D Black T-Shirt",
+      title: "That tich khong mua",
       description: "",
       availableSizes: ["History"],
       style: "Azul escuro",
@@ -221,7 +221,7 @@ function generateCustomers() {
     {
       id: 9,
       sku: 16,
-      title: "Crazy Monkey Grey",
+      title: "Tuoi tre dang gia bao nhieu",
       description: "",
       availableSizes: ["Travel", "History"],
       style: "",
@@ -235,7 +235,7 @@ function generateCustomers() {
     {
       id: 10,
       sku: 17,
-      title: "On The Streets Black T-Shirt",
+      title: "That tich khong mua",
       description: "",
       availableSizes: ["Travel", "History"],
       style: "",
