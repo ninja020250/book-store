@@ -23,7 +23,9 @@ class Pagination extends Component {
     return pages.map(this.createPageNumber);
   };
 
+
   createPageNumber = number => {
+  
     return (
       <li
         className="page-item disabled"
